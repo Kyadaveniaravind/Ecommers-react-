@@ -1,0 +1,266 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+  margin: 0; 
+  /* Removes default browser spacing around the page */
+
+  font-family: Arial, sans-serif; 
+  /* Sets clean, readable font */
+
+  background-color: #FFFFE3; 
+  /* Light cream background for entire app */
+
+  color: #4A4A4A; 
+  /* Default text color (dark gray) */
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex; 
+  /* Makes items align in a row */
+
+  justify-content: space-between; 
+  /* Pushes items to left and right */
+
+  align-items: center; 
+  /* Vertically centers items */
+
+  background-color: #4A4A4A; 
+  /* Dark gray navbar */
+
+  padding: 15px 30px; 
+  /* Space inside navbar (top-bottom, left-right) */
+
+  color: white; 
+  /* Text color inside navbar */
+}
+
+.nav-bar-brank {
+  font-size: 24px; 
+  /* Makes logo text bigger */
+
+  font-weight: bold; 
+  /* Makes it bold */
+
+  color: #FFFFE3; 
+  /* Cream color for contrast */
+
+  text-decoration: none; 
+  /* Removes underline from link */
+}
+
+.nav-bar-links a,
+.nav-bar-auth-links a {
+  margin: 0 10px; 
+  /* Space between links */
+
+  color: #CBCBCB; 
+  /* Light gray text */
+
+  text-decoration: none; 
+  /* Removes underline */
+
+  font-weight: 500; 
+  /* Slightly bold */
+}
+
+.nav-bar-links a:hover,
+.nav-bar-auth-links a:hover {
+  color: #FFFFE3; 
+  /* Changes color when hovered */
+}
+
+/* ===== HERO SECTION ===== */
+.homehero {
+  text-align: center; 
+  /* Centers text */
+
+  padding: 60px 20px; 
+  /* Space inside hero */
+
+  background-color: #6D8196; 
+  /* Blue background */
+
+  color: white; 
+  /* Text color */
+}
+
+.homehero h1 {
+  font-size: 36px; 
+  /* Large heading */
+
+  margin-bottom: 10px; 
+  /* Space below heading */
+}
+
+.homehero p {
+  font-size: 18px; 
+  /* Medium text */
+
+  max-width: 600px; 
+  /* Limits text width */
+
+  margin: 0 auto; 
+  /* Centers paragraph */
+}
+
+/* ===== PRODUCT SECTION ===== */
+.homecontainer {
+  padding: 40px 20px; 
+  /* Space around content */
+}
+
+.pagetile {
+  text-align: center; 
+  /* Centers title */
+
+  margin-bottom: 30px; 
+  /* Space below title */
+}
+
+/* ===== GRID LAYOUT ===== */
+.productsgrid {
+  display: grid; 
+  /* Enables grid layout */
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  /* Responsive columns:
+     - Each card min 250px
+     - Auto adjust based on screen */
+
+  gap: 20px; 
+  /* Space between cards */
+}
+
+/* ===== PRODUCT CARD ===== */
+.productcard {
+  background-color: white; 
+  /* Card background */
+
+  border-radius: 10px; 
+  /* Rounded corners */
+
+  overflow: hidden; 
+  /* Prevents content overflow */
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  /* Light shadow for depth */
+
+  transition: transform 0.3s ease; 
+  /* Smooth hover animation */
+}
+
+.productcard:hover {
+  transform: translateY(-5px); 
+  /* Moves card slightly up on hover */
+}
+
+/* ===== IMAGE ===== */
+.productimage {
+  width: 100%; 
+  /* Full width */
+
+  height: 200px; 
+  /* Fixed height */
+
+  object-fit: cover; 
+  /* Keeps image proportion without stretching */
+}
+
+/* ===== CONTENT ===== */
+.productcontent {
+  padding: 15px; 
+  /* Space inside card */
+}
+
+.productname {
+  font-size: 18px; 
+  /* Product title size */
+
+  margin-bottom: 10px; 
+  /* Space below */
+}
+
+.productprice {
+  font-size: 16px; 
+  /* Price size */
+
+  color: #6D8196; 
+  /* Blue highlight */
+
+  margin-bottom: 15px; 
+  /* Space below */
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: #4A4A4A; 
+  /* Dark button */
+
+  color: white; 
+  /* Text color */
+
+  border: none; 
+  /* Removes border */
+
+  padding: 10px 15px; 
+  /* Button size */
+
+  margin-right: 10px; 
+  /* Space between buttons */
+
+  border-radius: 5px; 
+  /* Rounded corners */
+
+  cursor: pointer; 
+  /* Pointer cursor on hover */
+}
+
+.btn-primary:hover {
+  background-color: #6D8196; 
+  /* Changes to blue on hover */
+}
+
+.btn-secondary {
+  display: inline-block; 
+  /* Allows padding */
+
+  padding: 10px 15px; 
+  /* Button size */
+
+  background-color: #CBCBCB; 
+  /* Light gray */
+
+  color: #4A4A4A; 
+  /* Dark text */
+
+  border-radius: 5px; 
+  /* Rounded corners */
+
+  text-decoration: none; 
+  /* Removes underline */
+}
+
+.btn-secondary:hover {
+  background-color: #6D8196; 
+  /* Hover color */
+
+  color: white; 
+  /* Text turns white */
+}
+.product-card-action {
+  display: flex; 
+  /* Aligns buttons in a row */
+
+  justify-content: space-between; 
+
+
+  /* Aligns buttons to the left */
+
+ padding: 0.5rem 1rem; 
+
+  /* Space above buttons */
+}
+.product-card
+{
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
