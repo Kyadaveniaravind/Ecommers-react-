@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Laptop Stand",
+    name: "Mouse",
     price: 49.99,
     image:
       "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
@@ -31,7 +31,7 @@ const products = [
     name: "Mechanical Keyboard",
     price: 129.99,
     image:
-      "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit 676=crop",
     description:
       "RGB backlit mechanical keyboard with Cherry MX switches. Perfect for gaming and typing enthusiasts.",
   },
