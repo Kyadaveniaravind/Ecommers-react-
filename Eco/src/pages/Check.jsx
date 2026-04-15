@@ -2,9 +2,13 @@ import React from "react";
 import { useCart } from "../context/Cartcontext";
 
 export default function Check() {
-    const { getCartItemsWithProducts, getCartTotal } = useCart();
+    const { getCartItemsWithProducts, getCartTotal, clearCart } = useCart();
     const items = getCartItemsWithProducts();
 
+    function Place_Order () {
+        alert("Order placed successfully!");
+        clearCart();
+    };
     return (
         <div className="page">
             <div className="container">
@@ -52,7 +56,7 @@ export default function Check() {
                             <strong>Total Amount</strong>
                             <strong>${getCartTotal().toFixed(2)}</strong>
                         </div>
-                        <button className="place-order-btn" disabled={items.length === 0}>
+                        <button onClick={Place_Order} className="place-order-btn" disabled={items.length === 0}>
                             Place Order
                         </button>
                     </div>
